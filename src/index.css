@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+/* Ensure the app background color fills the entire viewport.
+   The Landing/Home component already uses Tailwind classes for the dark
+   background (`bg-[#151a23]`). But CRA may render margins or default
+   body background — set a matching dark background here so edges are
+   covered even before React mounts. */
+body {
+  @apply text-gray-200;
+  background-color: #151a23; /* dark slate used by LandingPage */
+  margin: 0;
+  min-height: 100%;
+}
+
+/* Also make the root element take full height so Tailwind utility
+   classes like `min-h-screen` behave consistently. */
+#root {
+  min-height: 100%;
+}
