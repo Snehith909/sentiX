@@ -1,7 +1,0 @@
-sentence-transformers
-sentence-transformers[torch]
-transformers
-torch
-numpy
-scipy
-spacy
